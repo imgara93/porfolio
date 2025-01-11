@@ -21,9 +21,27 @@
 <style is:global>
   /* Theme Colors */
   :root {
-    background-color: #d8eefe;
+    --bg-color: #d8eefe;
+    --headline-color: #094067;
+    --br: 0.8rem;
   }
   :root.dark {
-    background-color: #0d0950;
+    --bg-color: #0d0950;
+    --headline-color: #fffffe;
+  }
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html {
+    background-color: var(--bg-color);
+    font-size: 62.5%;
+    body {
+      font-size: 1.6rem;
+    }
+    h1 {
+      color: var(--headline-color);
+    }
   }
 </style>

@@ -1,7 +1,22 @@
 ---
-import ThemeIcon from './ThemeIcon.astro';
+import Hamburger from './Hamburger.astro';
+import Theme from './Theme.astro';
 ---
 
 <header>
-  <ThemeIcon />
+  <nav>
+    <Hamburger />
+    <Theme />
+  </nav>
 </header>
+
+<style>
+  header {
+    background-color: var(--strokes);
+    height: 5rem;
+    width: 100%;
+  }
+  nav {
+    display: flex;
+  }
+</style>
